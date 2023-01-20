@@ -4,7 +4,7 @@ This project is focused on the Spotify Song Skip Prediction Challenge available 
 
 ## Getting Started
 
-To use this project, you will need to have access to a Databricks environment and have the necessary packages (Pandas, Pyspark, etc.) installed.
+To use this project, you will need to have access to a Pyspark environment (I used Databricks) and have the necessary packages (Pandas, Pyspark, etc.) installed.
 
 ### Data Sourcing and Ingestion
 
@@ -17,18 +17,6 @@ Both tables were explored, assessed, and visualized to make inferences and get t
 ### Model
 
 Some feature engineering was carried out, mainly creating new features using data from the previous timestamp. The tables were then joined to create one final dataframe for modeling. A number of different ML techniques were fitted to the data and assessed using MLflow as part of mllib. The best model was chosen using AUC score and results written up.
-
-## Usage
-
-To use this project, you can run the notebooks on a Databricks environment and follow the steps outlined in the notebooks to load and analyze the data, and build a model to predict song skips.
-
-## Contributing
-
-If you wish to contribute to this project, please fork the repository and make a pull request with your contributions.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
